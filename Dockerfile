@@ -1,9 +1,7 @@
 FROM haproxy
 MAINTAINER <email>
 
-RUN opkg-install haproxy ca-certificates
-
-MKDIR /etc/haproxy/certs
+RUN opkg-install haproxy ca-certificates && mkdir -p /etc/haproxy/certs
 
 VOLUME ["/etc/haproxy/certs"]
 

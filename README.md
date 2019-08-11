@@ -1,12 +1,9 @@
-## Create self signed certificate
+## Create self signed certificate for Jenkins with haproxy
 
-## Pre-requisite
 
 ```
 $ sudo mkdir /var/jenkins_home
-```
 
-```
 $ sudo openssl genrsa -out /var/jenkins_home/ssl.key 1024
 
 $ sudo openssl req -new -key /var/jenkins_home/ssl.key \
